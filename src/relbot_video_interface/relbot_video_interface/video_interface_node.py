@@ -123,7 +123,6 @@ class VideoInterfaceNode(Node):
                 2,
             )
 
-        # TODO: move this to the if-statement when debugging is finished. Don't publish unless a best_box has been found.
         self.position_pub.publish(point)
 
         cv2.imshow("RELBot YOLOv8 Person Tracking", debug_frame)
