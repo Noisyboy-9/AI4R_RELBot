@@ -19,7 +19,7 @@ class VideoInterfaceNode(Node):
 
         self.position_pub = self.create_publisher(Point, "/object_position", 10)
 
-        self.model = YOLO("yolov8n.pt")
+        self.model = YOLO("hardhat_yolov8n_best.pt")
         self.declare_parameter("min_detection_confidence", 0.5)
         self.declare_parameter("person_class_id", 0)
         self.declare_parameter("base_bounding_area", 10000)
